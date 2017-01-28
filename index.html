@@ -27,7 +27,7 @@
             <p>Рассмотрим 5 причин, по которым Седона круче, чем каньон!</p>
           </article>
         </div>
-        <section class="reason">
+        <section class="reason-item">
             <div class="reason">
                 <h2 class="reason-title">Настоящий городок</h2>
                 <p class="reason-number">&#8211;№1&#8211;</p>
@@ -51,7 +51,7 @@
             <p class="features-text">Не только китайского, но и местного производства!</p>
         </article>
         </section>    
-            <section class="reason">
+            <section class="reason-item">
             <div class="reason">
                 <h2 class="reason-title">Там есть мост дьявола</h2>
                 <p class="reason-number">&#8211;№2&#8211;</p> 
@@ -101,27 +101,26 @@
                     <i class="icon-calendar"><button type="button" class="plan">Календарь</button></i>
                 </div>    
                     
-                <div class="search-form-row">
-                    <div class=" search-form-left">
-                        <label for="adult">Взрослые</label>
-                    </div>    
+                <div class="search-form-half-row">
+                        <label for="adult">Взрослые</label>   
                     <div class="search-form-right">
-                        <button type="button" class="btn-minus">Минус</button>
+                        <i class=" icon-minus"><button type="button" class="btn-minus">Минус</button></i>
                         <input type="text" id="adult">
-                        <button type="button" class="btn-plus">Плюс</button>
+                        <i class="icon-plus"><button type="button" class="btn-plus">Плюс</button></i>
                         <input type="text" id="adult">
                     </div>    
                 </div>     
                 
-                <label for="child">Дети</label>
-                <button type="button" class="btn-minus">Минус</button>
-                <input type="text" id="child">
-                <button type="button" class="btn-plus">Плюс</button>
-                <input type="text" id="child">
+                <div class="search-form-half-row">
+                    <label for="child">Дети</label>
+                    <i class=" icon-minus"><button type="button" class="btn-minus">Минус</button></i>
+                    <input type="text" id="child">
+                    <i class="icon-plus"><button type="button" class="btn-plus">Плюс</button></i>
+                    <input type="text" id="child">
+                </div>    
                 
                 <button type="submit" class="find">Найти</button>
-            </form> 
-           <img src="#" alt="Карта">  
+            </form>   
         <div class="footer-wrapper">
             <div class="footer-hashtag">
                 <a href="#">#visitsedona</a>
