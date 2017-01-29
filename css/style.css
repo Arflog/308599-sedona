@@ -3,28 +3,26 @@ body {
     line-height: normal;
     color: #333333;
     font-weight: normal;
-    font-family: "Myriad Pro Regular", "Arial", "Times New Roman";
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
 
 }
 
-h1 .main-title {
+.main-title {
   font-size: 21px;
   line-height: normal;
   color: #000000;
   font-weight: bold;
-  font-family: "PTSans Bold", "Myriad Pro Regular", "Arial", "Times New Roman";
   text-transform: uppercase;
   text-align: center;
 }
 
- .reason-title {
+.reason-title {
   font-size: 21px;
   line-height: normal;
   color: #ffffff;
   font-weight: bold;
-  font-family: "PTSans Bold", "Arial", "Times New Roman";
   text-transform: uppercase;
   text-align: center;
 }
