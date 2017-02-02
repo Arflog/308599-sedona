@@ -101,22 +101,19 @@ background: brown;
 
 .footer-hashtag {
     float: left;
-    width: 160px;
-    margin-right: `100px;
+    width: 33.3334%;
     min-height: 120px;
 }
 
 .social {
   float: left;
-  width: 160px;
-  margin-left: 100px;
+  width: 33.3334%;
   min-height: 120px;
 }
 
 .copyright {
   float: right;
-  width: 160px;
-  margin-left: : 60px;
+  width: 33.3334%;
   min-height: 120px;
 
 }
@@ -143,6 +140,11 @@ vertical-align: bottom;
 min-height: 32px;
 }
 
+.hotel-item-content {
+  float: left;
+  width: 48%;
+}
+
 .hotel-item {
   border-top: 2px solid black;
   min-height: 152px;
@@ -163,8 +165,8 @@ margin-bottom: 32px;
 
 .hotel-item-block {
   float: left;
-  width: 130px;
-  margin-right: 6px;
+  width: 22%;
+  text-align: left;
 }
 
 .hotel-item-rate {
