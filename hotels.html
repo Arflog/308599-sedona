@@ -9,13 +9,13 @@
   <body>
       <div class="container clearfix">
         <header class="main-header">
-                <a href="#" class="logo"><img src="img/logo.png" width="138" height="70"  alt="Логотип"></a>
+                <a href="index.html" class="logo"><img src="img/logo.png" width="138" height="70"  alt="Логотип"></a>
             <nav class="main-nav clearfix">
                 <ul>
-                    <li><a href="#" class="disabled">Информация</a></li>
+                    <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
-                    <li><a href="#" class="active">Гостиницы</a></li>
+                    <li><a class="active">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -48,19 +48,18 @@
                     </faildset>
                     <faildset class="filter-price">
                             <legend>Стоимость в сутки (Р):</legend>
-                                <div class="range">
-                                    <label for="range-1">От</label>
-                                    <input type="text" id="range-1">
-                                </div>
-                                <div class="range">
-                                    <label for="range-2">До</label>
-                                    <input type="text" id="range-2">
-                                </div>
-                                <div class="range-scale">
-                                    <button class="range-btn btn-from" type="button">От</button>
-                                    <button class="range-btn btn-to" type="button">До</button>
-                                </div>
-                        <button class="btn-show" type="submit">Показать</button>
+                                <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
                     </faildset>
               </div>
         </form>
