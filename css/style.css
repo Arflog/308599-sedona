@@ -313,45 +313,102 @@ background: #ffffff;
   height: 38px;
 }
 
+.search-form-row input:hover {
+  background: #ebebeb;
+}
+
+.search-form-row input:focus {
+  border: 2px solid #ebebeb;
+  background: #ffffff;
+}
+
+
+
 .icon-calendar {
  font-size: 0;
-  background-image: url("../img/calendar.png");
-  background-repeat: no-repeat;
   width: 21px;
   height: 22px;
   position: absolute;
   top: 10px;
   right: 80px;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -5px -5px;
 }
 
+.icon-calendar:hover {
+  width: 21px;
+  height: 22px;
+  background-position: -36px -5px;
+}
+
+.icon-calendar:active {
+  width: 21px;
+  height: 22px;
+  background-position: -67px -5px;
+}
+
+
 .search-form-half-row {
+  float: left;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.search-form-half-row label {
+  float: left;
+  width: 100px;
+  padding-left: 45px;
 }
 
 .search-form-half-row input {
+  float: right;
+  border: none;
   background: #f2f2f2;
   width: 38px; 
   height: 38px;
-  position: relative;
+  margin-right: 38px;
+  box-sizing: border-box;
+}
+
+.search-form-half-row:nth-child(2) label{ 
+text-align: right;
+padding-right: 16px;
+box-sizing: border-box;  
 }
 
 .icon-minus {
   font-size: 0;
-  background-image: url("../img/minus.png");
-  background-repeat: no-repeat;
-  width: 6px;
-  height: 3px;
-  position: absolute;
 }
 
 .icon-plus {
   font-size: 0;
-  background-image: url("../img/plus.png");
-  background-repeat: no-repeat;
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  
+}
+
+.search-form-row {
+  position: relative;
+}
+
+ .search-form-half-row ::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    background: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+}
+
+.icon-minus::before {
+    width: 12px;
+    height: 3px;
+    background-position: -166px -5px;
+}
+
+.icon-plus::before {
+    width: 11px;
+    height: 11px;
+    background-position: -232px -5px;
 }
 
 .find {
@@ -364,6 +421,15 @@ background: #ffffff;
   width: 458px;
   height: 58px;
   margin-bottom: 56px;
+}
+
+.find:hover {
+  background: #669ec0;
+}
+
+.find:active {
+  background: 5496bd;
+  color: #88b6d1;
 }
 
 .map {
