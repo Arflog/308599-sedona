@@ -267,26 +267,107 @@ background: #ffffff;
 }
 
 .btn-search {
+    width: 565px; 
     background: #766357;
     color: #ffffff;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 21px;
     line-height: 26px;
     border: none;
-    padding: 30px 140px;
+    padding: 30px 100px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
+.index-footer {
+  position: relative;
+}
+
 .search-form {
-  margin: 0 auto;
-  width: 565px;
-  min-height: 480px;
-    position: absolute;
-    bottom: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -282px;
+  width: 565px; 
+  z-index: 3;
+  background: #ffffff;
+  font-weight: 800;
+}
+
+
+.search-form-row {
+  position: relative;
+   margin-top: 50px;
+}
+
+.search-form-row:nth-of-type(2) {
+  margin: 30px 0;
+} 
+
+.search-form-row input{
+  border: none;
+  background: #f2f2f2;
+  width: 345px;
+  height: 38px;
+}
+
+.icon-calendar {
+ font-size: 0;
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  top: 10px;
+  right: 80px;
+}
+
+.search-form-half-row {
+  margin-bottom: 30px;
+}
+
+.search-form-half-row input {
+  background: #f2f2f2;
+  width: 38px; 
+  height: 38px;
+  position: relative;
+}
+
+.icon-minus {
+  font-size: 0;
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 3px;
+  position: absolute;
+}
+
+.icon-plus {
+  font-size: 0;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  
+}
+
+.find {
+  border: none;
+  background: #81b3d2;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #ffffff;
+  width: 458px;
+  height: 58px;
+  margin-bottom: 56px;
 }
 
 .map {
+    background: #f2f1ef;
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     height: 593px;
@@ -294,16 +375,19 @@ background: #ffffff;
     z-index: 1;
 }
 
-.footer-wrapper, .inner-footer{
+.footer-wrapper{
   color: #000000;
     background: rgba(255, 255, 255, 9);
-
     position: absolute;
     bottom: 0;
     width: 100%;
     left: 0;
+    position: relative;
     z-index: 10;
-
+    font-size: 0;
+    padding: 0 6%;
+    box-sizing: border-box;
+    
   }
 
 .footer-hashtag {
@@ -463,7 +547,7 @@ background: #ffffff;
 */
 
 .copyright {
-  float: right;
+  display: inline-block;
   width: 33.3334%;
   min-height: 120px;
     position: relative;
