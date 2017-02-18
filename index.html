@@ -88,9 +88,8 @@
                 <button type="button" class="btn-search">Поиск гостиницы в Седоне</button>
             </div>
         </main>
-        <footer class="index-footer">
+        <footer class="index-footer clearfix">
           <div class="map">
-
           </div>
             <form class="search-form" method="get" action="/echo">
                <div class="search-form-row clearfix">
@@ -103,23 +102,21 @@
                     <input type="text" id="to" class="search-form-field" value="4 июля 2017">
                     <i class="icon-calendar">Календарь</i>
                 </div>
-
-                <div class="search-form-half-row clearfix">
+                <div class="search-form-row clearfix">
+                  <div class="search-form-half-row clearfix">
                         <label for="adult">Взрослые:</label>
                         <i class=" icon-minus">Минус</i>
-                        <input type="text" id="adult" class="wriper"> 2
+                        <input type="text" id="adult" class="wriper" value="2" required>
                         <i class="icon-plus">Плюс</i>
-                        <input type="text" id="adult" class="wriper">
-                </div>
+                  </div>
 
-                <div class="search-form-half-row clearfix">
+                  <div class="search-form-half-row clearfix">
                     <label for="child">Дети:</label>
                     <i class=" icon-minus">Минус</i>
-                    <input type="text" id="child"> 0
+                    <input type="text" id="child" value="0" required>
                     <i class="icon-plus">Плюс</i>
-                    <input type="text" id="child">
-                </div>
-
+                  </div>
+              </div>  
                 <button type="submit" class="find">Найти</button>
             </form>
         <div class="footer-wrapper clearfix">
@@ -138,5 +135,18 @@
         </div>
       </footer>
     </div>
+    <script>
+      var btn = document.querySelector(".btn-search");
+      var form = document.querySelector(".search-form");
+      btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        if(form.classList.contains("form-open")){
+          form.classList.remove("form-open");
+        }
+        else {
+          form.classList.add(".form-open");
+        }
+      });
+    </script> 
   </body>
 </html>
