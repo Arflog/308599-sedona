@@ -85,13 +85,13 @@
                 <h2 class="search-title">Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки, <br>
                 и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-                <button type="button" class="btn-search">Поиск гостиницы в Седоне</button>
+                <a href="hotels.html" class="link-search">Поиск гостиницы в Седоне</a>
             </div>
         </main>
-        <footer class="index-footer clearfix">
+        <footer class="index-footer">
           <div class="map">
           </div>
-            <form class="search-form" method="get" action="/echo">
+            <form class="search-form form-open" method="get" action="/echo">
                <div class="search-form-row clearfix">
                     <label for="from" class="search-form-label">Дата заезда:</label>
                     <input type="text" id="from" class="search-form-field" value="24 апреля 2017">
@@ -135,18 +135,7 @@
         </div>
       </footer>
     </div>
-    <script>
-      var btn = document.querySelector(".btn-search");
-      var form = document.querySelector(".search-form");
-      btn.addEventListener("click", function(event) {
-        event.preventDefault();
-        if(form.classList.contains("form-open")){
-          form.classList.remove("form-open");
-        }
-        else {
-          form.classList.add(".form-open");
-        }
-      });
+    <script src="js/script.js">
     </script> 
   </body>
 </html>
