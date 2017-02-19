@@ -1,4 +1,4 @@
-var btn = document.querySelector(".btn-search");
+var btn = document.querySelector(".link-search");
       var form = document.querySelector(".search-form");
       btn.addEventListener("click", function(event) {
         event.preventDefault();
