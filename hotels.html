@@ -24,7 +24,7 @@
                 <form action="/echo" method="post" class="filter-form">
                   <div class="clearfix">
                     <div class="filter-form-col">
-                        <legend>Инфраструктура:</legend>
+                        <div class="legend">Инфраструктура:</div>
 
                             <input type="checkbox" id="one" checked>
                             <label for="one">Бассейн</label>
@@ -36,7 +36,7 @@
                             <label for="three">Wi-Fi</label>
                     </div>
                     <div class="filter-form-col">
-                        <legend>Тип жилья:</legend>
+                        <div class="legend">Тип жилья:</div>
 
                             <input type="checkbox" id="four" checked>
                             <label for="four">Гостиница</label>
@@ -48,7 +48,7 @@
                             <label for="six">Апартаменты</label>
                     </div>
                     <div class="filter-price">
-                            <legend>Стоимость в сутки (Р):</legend>
+                            <div class="legend">Стоимость в сутки (Р):</div>
                                 <div class="price-controls">
         <label class="min-price">от <input type="text" name="min-price" value="0"></label>
         <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -74,8 +74,8 @@
          </ul>  
                   <!--Стрелочки-->
                 <div class="arrow-block clearfix">  
-                    <li class="hotel-sort-item arrow-top"><a href="#"></a></li>
-                    <li class="hotel-sort-item arrow-bottom disabled"><a href="#"></a></li>  
+                  <a href="#" class="hotel-sort-item arrow-bottom disabled"></a>    
+                  <a href="#" class="hotel-sort-item arrow-top"></a>
                 </div>
         </div>
         <article class="hotel-item clearfix">

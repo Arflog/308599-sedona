@@ -630,11 +630,11 @@ body {
 .filter-price {
   float: right;
   width: 328px;
-  min-height: 183px;
-  margin-top: 30px;  
+  margin-top: 28px;
+  min-height: 183px;  
 }
 
-legend {
+.legend {
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
@@ -923,7 +923,7 @@ input[type=checkbox]:disabled{
   padding-bottom: 18px;
 }
 
-.filter-form-col legend {
+.filter-form-col .legend {
   padding-top: 29px;
   padding-bottom: 17px;
   font-weight: bold;
@@ -993,9 +993,9 @@ input[type=checkbox]:disabled{
   border-bottom: none;
 }
 
-.arrow-block {
+.arrow-block a {
   float: right;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .arrow-top {
