@@ -930,12 +930,11 @@ input[type=checkbox]:disabled{
 }
 
 .hotel-sorting {
-  display: inline-block;
   text-align: left;
-  vertical-align: bottom;
-  min-height: 32px;
   width: 100%;
   padding: 0 6%;
+  padding-top: 30px;
+  padding-bottom: 20px;
   box-sizing: border-box;  
   position: relative;    
 }
@@ -952,20 +951,19 @@ input[type=checkbox]:disabled{
 }
 
 .hotel-sort-title {
+  float: left;
   font-size: 21px;
   text-align: left;
   font-weight: 700;
   display: block;
-  padding: 30px 0;
-  width: 12%;
 }
 
 .hotel-sort-list {
+  float: left;
   display: block;
-  width: 80%;
-  position: absolute;
-  left: 196px;
-  top: 20px;   
+  width: 55%; 
+  margin-top: 5px;
+  margin-left: 8px;
 }
 
 .hotel-sort-list .active {
@@ -997,7 +995,6 @@ input[type=checkbox]:disabled{
 
 .arrow-block {
   float: right;
-  width: 11%;
   margin-top: 6px;
 }
 
