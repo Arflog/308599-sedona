@@ -169,6 +169,7 @@ body {
 
 .reason-number {
   margin: 24px;
+  margin-bottom: 20px;
 }
 
 .reason-photo {
@@ -245,22 +246,26 @@ body {
 
 .gray-title {
   padding: 0 120px;
-  padding-top: 30px;
+  margin: 0;
+  padding-top: 48px;
   line-height: 22px;
 }
 
 .gray-text {
+  margin: 0;
   padding: 0 15%;
 }
 
 .search {
   width: 100%;
-  min-height: 270px;
+  min-height: 295px;
   background: #ffffff;
 }
 
 .search-title {
-  padding-top: 25px;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 23px;
   font-size: 30px;
   font-weight: 800;
 }
@@ -441,7 +446,7 @@ body {
 .icon-plus:hover {
   width: 12px;
   height: 12px;
-  background-position: -250px 8px;
+  background-position: -249px 8px;
 }
 
 .icon-minus:active {
@@ -776,14 +781,14 @@ body {
 
 .hotel-item {
   border-top: 2px solid #e5e5e5;
-  min-height: 150px;
+  min-height: 148px;
   width: 100%;
   padding: 0 6%;
   box-sizing: border-box;
 }
 
 .hotel-item:last-child {
-  margin-top: 2px;
+  margin-top: 3px;
   border-bottom: 2px solid #e5e5e5;
 }
 
@@ -803,7 +808,7 @@ body {
 
 .hotel-item-block p {
   margin: 0;
-  padding-top: 9px;
+  padding-top: 8px;
 }
 
 .hotel-item-block a {
@@ -903,9 +908,9 @@ body {
 
 input[type="checkbox"] + label {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   line-height: 20px;
-  padding-left: 43px;
+  padding-left: 39px;
   position: relative;
   cursor: pointer;
 }
@@ -941,11 +946,11 @@ input[type=checkbox]:disabled {
   display: block;
   text-align: left;
   padding-left: 40px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 .filter-form-col .legend {
-  padding-top: 29px;
+  padding-top: 28px;
   padding-bottom: 17px;
   font-weight: bold;
 }
@@ -955,7 +960,7 @@ input[type=checkbox]:disabled {
   width: 100%;
   padding: 0 6%;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   box-sizing: border-box;
   position: relative;
 }
