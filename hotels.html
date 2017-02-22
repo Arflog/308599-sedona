@@ -21,8 +21,7 @@
         </nav>
       </header>
       <main>
-        <form action="/echo" method="post" class="filter-form">
-          <div class="clearfix">
+        <form action="/echo" method="post" class="filter-form clearfix">
             <div class="filter-form-col">
               <div class="legend">Инфраструктура:</div>
                 <input type="checkbox" id="one" checked>
@@ -43,20 +42,19 @@
             </div>
             <div class="filter-price">
               <div class="legend">Стоимость в сутки (Р):</div>
-                <div class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
-                </div>
-                <button class="btn-transparent" type="submit">Показать</button>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-          </div>
         </form>
         <div class="hotel-sorting clearfix">
           <div class="hotel-sort-title">Найдено: 3</div>
@@ -74,10 +72,10 @@
         </div>
         <article class="hotel-item clearfix">
           <div class="hotel-item-photo">
-            <img src="img/Amara.jpg" width="135" height="90" alt="Amara">
+            <img src="img/amara.jpg" width="135" height="90" alt="Amara">
           </div>
           <div class="hotel-item-content clearfix">
-            <h2 class="hotel-item-title">Amara Resort &amp; spa</h2>
+            <a class="hotel-item-title">Amara Resort &amp; spa</a>
             <div class="hotel-item-block">
               <p>Гостиница</p>
               <a href="#" >Подробнее</a>
@@ -99,29 +97,29 @@
             <img src="img/desert.jpg" width="135" height="90" alt="Desert">
           </div>
           <div class="hotel-item-content">
-            <h2 class="hotel-item-title">Desert quail inn</h2>
+            <a class="hotel-item-title">Desert quail inn</a>
             <div class="hotel-item-block">
               <p>Мотель</p>
               <a href="#" >Подробнее</a>
             </div>
-              <div class="hotel-item-block">
-                <p>От 2000 р.</p>
-                <a href="#" class="dark-btn">Забронировать</a>
-              </div>
-          </div>
-            <div class="hotel-item-rate">
-              <div class="stars">
-                <img src="img/stars.png" width="42" height="17" alt="Desert">
-              </div>  
-              <span class="hotel-item-rating">Рейтинг: 8,9</span>
+            <div class="hotel-item-block">
+              <p>От 2000 р.</p>
+              <a href="#" class="dark-btn">Забронировать</a>
             </div>
+          </div>
+          <div class="hotel-item-rate">
+            <div class="stars">
+              <img src="img/stars.png" width="42" height="17" alt="Desert">
+            </div>  
+            <span class="hotel-item-rating">Рейтинг: 8,9</span>
+          </div>
         </article>
         <article class="hotel-item clearfix">
           <div class="hotel-item-photo">
             <img src="img/diablo.jpg" width="135" height="90" alt="Diablo">
           </div>
           <div class="hotel-item-content">
-            <h2 class="hotel-item-title">Villas at Poco Diablo</h2>
+            <a class="hotel-item-title">Villas at Poco Diablo</a>
             <div class="hotel-item-block">
               <p>Апартаменты</p>
               <a href="#" >Подробнее</a>
@@ -138,7 +136,7 @@
             <span class="hotel-item-rating">Рейтинг: 9,2</span> 
           </div>
         </article>
-    </main>
+      </main>
         <footer class="inner-footer clearfix">
           <section class="footer-hashtag">
             <a href="#">#visitsedona</a>
